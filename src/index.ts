@@ -25,3 +25,20 @@ let employee: [number, string][] = [
 
 // Union
 let pid: string | number = 34;
+
+// Enum
+enum Direction1 {
+	Up = 1,
+	Down,
+	Left,
+	Right,
+}
+
+enum Direction2 {
+	Up = 'Up',
+	Down = 'Down',
+	Left = 'Left',
+	Right = 'Right',
+}
+
+console.log(Direction1, Direction2);
