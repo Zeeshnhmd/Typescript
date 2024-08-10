@@ -42,7 +42,7 @@ enum Direction2 {
 	Right = 'Right',
 }
 
-console.log(Direction1, Direction2);
+// console.log(Direction1, Direction2);
 
 // Objects
 
@@ -61,3 +61,13 @@ let cid: any = 1;
 
 // let customerId = <number>cid;
 let customerId = cid as number;
+
+// Function
+function addNum(x: number, y: number): number {
+	return x + y;
+}
+
+// Function void type
+function log(message: number | string): void {
+	console.log(message);
+}
