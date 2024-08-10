@@ -71,3 +71,27 @@ function addNum(x: number, y: number): number {
 function log(message: number | string): void {
 	console.log(message);
 }
+
+/**
+ * * Interfaces
+ * - We cannot use Interfaces with Premetives or Unions
+ * - Generally we use Interfaces with Objects
+ */
+
+interface UserInterface {
+	readonly id: number; // We can also use readonly this will restrict anyone to update the value
+	name: string;
+	age?: number;
+}
+
+const user1: UserInterface = {
+	id: 1,
+	name: 'John',
+};
+
+interface MathFunc {
+	(x: number, y: number): number;
+}
+
+const add: MathFunc = (x, y) => x + y;
+const sub: MathFunc = (x, y) => x - y;
