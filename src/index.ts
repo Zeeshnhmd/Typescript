@@ -22,3 +22,6 @@ let employee: [number, string][] = [
 	[1, 'Zeeshan'],
 	[2, 'Faizan'],
 ];
+
+// Union
+let pid: string | number = 34;
