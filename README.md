@@ -11,3 +11,7 @@ _No need to add file name (index) if you have set "target": "es6" in tsconfig fi
 ## Create a tsconfig.json file
 
 `tsc --init`
+
+## Replace js extension to ts extension using this command in powershell
+
+`Get-ChildItem -Recurse -Filter *.js | Rename-Item -NewName { $_.Name -replace '\.js$','.ts' }`
