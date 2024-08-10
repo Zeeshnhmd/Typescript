@@ -137,3 +137,16 @@ class Employee extends Person {
 const emp = new Employee(1, 'Shawn', 'Developer');
 
 // console.log(emp.register());
+
+/**
+ * * Generics
+ * - We can use Generic type to say that this array is going to string only or number only
+ *  */
+function getArray<G>(items: G[]): G[] {
+	return new Array().concat(items);
+}
+
+const numArray = getArray<number>([1, 2, 3, 4, 5]);
+const strArray = getArray<string>(['Zeeshan', 'faizan']);
+
+strArray.push('Name');
