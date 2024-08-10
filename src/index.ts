@@ -95,3 +95,31 @@ interface MathFunc {
 
 const add: MathFunc = (x, y) => x + y;
 const sub: MathFunc = (x, y) => x - y;
+
+// Classes
+
+interface PersonInterface {
+	id: number; // We can also use readonly this will restrict anyone to update the value
+	name: string;
+	register(): string;
+}
+
+class Person implements PersonInterface {
+	id: number;
+	name: string;
+
+	constructor(id: number, name: string) {
+		this.id = id;
+		this.name = name;
+	}
+
+	register() {
+		return `${this.name} is registered successfully.`;
+	}
+}
+
+const zeeshan = new Person(5, 'zeeshan');
+const faizan = new Person(5, 'Faizan');
+
+// console.log(faizan.register());
+// console.log(zeeshan, faizan);
