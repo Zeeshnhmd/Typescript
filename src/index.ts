@@ -123,3 +123,17 @@ const faizan = new Person(5, 'Faizan');
 
 // console.log(faizan.register());
 // console.log(zeeshan, faizan);
+
+// Extending classes
+class Employee extends Person {
+	position: string;
+
+	constructor(id: number, name: string, position: string) {
+		super(id, name);
+		this.position = position;
+	}
+}
+
+const emp = new Employee(1, 'Shawn', 'Developer');
+
+// console.log(emp.register());
