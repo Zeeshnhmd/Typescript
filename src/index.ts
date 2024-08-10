@@ -26,7 +26,8 @@ let employee: [number, string][] = [
 // Union
 let pid: string | number = 34;
 
-// Enum
+// Enum (enumeration) is a way to define a set of named constants, which can be used to represent a collection of related values. Enums make it easier to work with a set of predefined values in a type-safe manner.
+
 enum Direction1 {
 	Up = 1,
 	Down,
