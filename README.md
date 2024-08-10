@@ -18,7 +18,7 @@ tsc --watch
 tsc --init
 ```
 
-## Replace js extension to ts extension using this command in powershell
+## Replace _js_ extension to _ts_ extension using this command in _powershell_
 
 ```powersheel
 Get-ChildItem -Recurse -Filter *.js | Rename-Item -NewName { $_.Name -replace '\.js$','.ts' }
